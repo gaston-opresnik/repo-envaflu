@@ -1,0 +1,433 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+
+:root{
+      font-size: 16px;
+
+}
+
+
+a:link {text-decoration: none;
+}
+a:visited {text-decoration: none;
+}
+a:hover {text-decoration: none;
+	     color: #fd7a92;
+}
+
+
+/*---------- CLASES UTILITARIAS ----------*/
+
+.btn{
+	text-decoration: none;
+	background: rgb(255, 11, 81);
+ 	padding: 1rem;
+	border-radius: 1rem;
+	color: white;
+	font-family: 'bebas neue', sans-serif;
+	font-style: italic;
+	font-size: 1.5rem;
+	display: inline-block;
+	margin-top: 2rem;
+	text-align: center;
+}
+
+/*---------- FIN CLASES UTILITARIAS ----------*/
+
+
+
+/*---------- HEADER ----------*/
+
+.header {
+	background-color: rgb(24, 24, 24);
+	height: 6rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem;
+
+}
+
+
+ .header__logo{
+	 max-width: 250px; 
+	 
+ }
+
+
+ .header__list{
+	display: flex;
+	text-decoration: none;
+	list-style: none;
+
+ }
+
+
+ .header__item{
+	 padding: 1.2rem;
+	 text-decoration: none;
+	 font-family: 'Bebas Neue', cursive;
+	 font-size: 1.5rem;
+	 font-style: italic;
+ }
+
+
+ .header__anchor{
+     color: white;
+ }
+
+/*---------- FIN HEADER ----------*/
+
+
+
+/*---------- HERO SECTION ----------*/
+
+.hero{
+     background-image: url(../img/hero_background.jpg);
+	 background-repeat: no-repeat;
+	 background-position: bottom;
+	 background-size: cover;
+	 color: black;
+	 font-size: 1.5rem;
+	 text-align: left;
+	 height: 87vh;
+	 display: flex;
+	 text-align: left;
+	 align-items: center;
+
+}
+
+
+ .hero__container{
+	padding-left: 3rem;
+ }
+
+
+ .hero__heading{
+	font-size: 4.5rem;
+	font-family: 'Bebas Neue', cursive;	
+	font-style: italic;
+	color: white; 
+	text-shadow: black 0.1em 0.1em 0.2em;
+ }
+
+
+ .hero__slogan{
+	font-size: 1.5rem;
+	color: white;
+	font-family: 'poppins', sans-serif;
+	margin-top: 1rem;
+ }
+
+/*---------- FIN HERO SECTION ----------*/
+
+
+
+
+
+
+/*---------- INFO ----------*/
+
+.info {
+	position: relative;
+	display: flex;
+	background-image: url(../img/background_2.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh; 
+	
+}
+
+
+ .info__img {
+	max-width: 70%;
+	border-radius: 1.5rem;
+
+
+ }
+
+ .info__card{
+	position: relative;
+	display: flex;
+    justify-content: center;
+	align-items: center;
+ }
+
+
+ .info__card--h3{
+	font-family: 'poppins', sans-serif;
+	font-style: italic;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	font-size: 3rem;
+	color: white;
+	position: absolute;
+	bottom: 0.5rem;
+
+ }
+
+
+ .info__card--p{
+	font-family: 'poppins', sans-serif;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.446);
+	border-radius: 1rem;
+
+
+ }
+
+ /*---------- FIN INFO ----------*/
+
+
+
+ /*---------- PRODUCTOS ----------*/
+
+.products {
+    background-image: url(../img/background_productos.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 3rem;
+	height: 150vh; 
+}
+
+ .products__secondrow{
+	padding-top: 3rem;
+ }   
+
+
+ .products__img {
+	width: 80%;
+	border-radius: 1.5rem;
+	margin-left: 2rem;
+ }
+
+
+ .products__card {
+	width: 30%;
+	display: inline-block;
+	margin: 1rem;
+	position: relative;
+	text-align: center;	
+ }
+
+
+ .products__h2{
+	position: absolute;
+	font-family: 'poppins', sans-serif;
+	font-size: 1.3rem;
+	color: rgb(58, 58, 58);
+	margin-top: 1rem;
+	left: 9rem;
+ }
+
+
+/*---------- FIN PRODUCTOS ----------*/
+
+
+
+/*---------- NOSOTROS ----------*/
+
+ .nosotros{
+	background-image: url(../img/nosotros_background.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	height: 90vh;
+	position: relative;
+ }
+
+ .nosotros__container{
+	position: absolute;
+	left: 5rem;
+	top: 4rem;
+	width: 40%;
+ }
+
+
+ .nosotros__h1{
+	position: absolute;
+	font-family: 'Bebas Neue', cursive;
+	font-style: italic;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	font-size: 3rem;
+	color: white;
+	top: 1rem;
+	left: 9rem;
+ }
+
+
+ .nosotros__p{
+	position: absolute;
+	font-family: 'poppins', sans-serif;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	font-style: italic;
+	font-size: 1.2rem;
+	color: white;
+	top: 6rem;
+	right: 1rem;
+ }
+
+/*---------- FIN NOSOTROS ----------*/
+
+
+
+/*---------- FORMULARIO ----------*/
+
+.contacto{
+	background-image: url(../img/background_2.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 85vh;
+	position: relative;	
+}
+
+.contato__form{
+	position: absolute;
+	width: 30rem;
+	left: 33%;
+	top: 5rem;
+	font-family: 'poppins', sans-serif;
+	font-size: 1.5rem;
+}
+
+
+.contacto__contenedor{
+	position: absolute;
+	left: 25%;
+}
+
+
+/*---------- FIN FORMULARIO ----------*/
+
+
+
+/*---------- CORPORATIVOS ----------*/
+
+.corporativos{
+	background-image: url(../img/background_2.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 6rem;
+	height: 85vh; 
+}
+
+.corporativos__card{
+	width: 30%;
+	display: inline-block;
+	margin: 1rem;
+	position: relative;
+	text-align: center;
+}
+
+
+.corporativos__img{
+	width: 80%;
+	border-radius: 1.5rem;
+	margin-left: 2rem;
+}
+
+
+.corporativos__h2{
+	position: absolute;
+	font-family: 'poppins', sans-serif;
+	font-size: 1.3rem;
+	color: rgb(58, 58, 58);
+	margin-top: 1rem;
+	left: 9rem;
+}
+
+/*---------- FIN CORPORATIVOS ----------*/
+
+
+
+ /*---------- FOOTER ----------*/
+
+.footer { 
+	background-color: rgb(24, 24, 24);
+	position: relative;
+	height: 20rem;
+}
+
+
+ .footer__logo{
+	height: 120px;
+	position: absolute;
+	top: 2.5rem;
+	left: 45%;
+ }
+
+
+ .footer__list{
+	position: absolute;
+    left: 20%;
+	top: 2rem;
+	list-style: none;
+ }
+
+
+ .footer__item{
+	color: white;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.2rem;
+	font-style: italic;
+	margin: 0.5rem;
+ }
+
+
+ .footer__anchor{
+    color: white;
+ }
+
+
+ .footer__contacto{
+	position: absolute;
+	left: 65%;
+	top: 2rem;
+
+ }
+
+
+ .footer__contacto--item{
+	text-decoration: none;
+	color: white;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 1.2rem;
+	font-style: italic;
+	margin: 0.5rem;
+ }
+
+
+ .footer__linea{
+	position: absolute;
+	top: 60%;
+	left: 12%;
+	border: 0.5px solid;
+	color: white;
+	width: 75%;
+ }
+
+
+ .footer__redes{
+	position: absolute;
+	left: 43.3%;
+	top: 14rem;
+ }
+
+
+ .footer__redes--item{
+	text-decoration: none;
+	display: inline-block;
+	margin: 1.5rem;
+ }
+
+
+
+ /*---------- FIN FOOTER ----------*/
