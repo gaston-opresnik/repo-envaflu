@@ -5,13 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com"> 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+  <!-- GOOGLE FONTS -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+
 
   <title>Contacto</title>
   <link rel="icon" type="image/x-icon" href="../img/logos/favicon_envaflu.png">
@@ -32,43 +38,68 @@
         </nav>
     </header>
 
+    
     <main class="contacto">
-        <form action="#" method="get" enctype="text/plain" class="contato__form">
 
-            <div class="contacto__contenedor">
-                <div>
-                    <input type="text" name="username" id="username" required placeholder="Nombre y Apellido">
+        <div class="contacto__caja">
+
+            <div class="contacto__wrapper">
+                <div class="contacto__formulario" id="formulario" >
+                 
+                    <form class="contacto__form" action="#" method="get" enctype="text/plain">
+                        <p>
+                            <label for="fullname">Nombre</label>  
+                            <input type="text" name="fullname" id="fullname" required>
+                        </p>
+                        <p>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </p>
+                        <p>
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" name="phone" id="phone">
+                        </p>
+                        <p>
+                            <label for="asunto">Asunto</label>
+                            <input type="text" name="asunto" id="asunto">
+                        </p>
+                        <p class="block">
+                            <label for="consulta">Escriba su consulta</label>
+                            <textarea name="consulta" id="consulta" cols="30" rows="3"></textarea>
+                        </p>
+                        <p class="block">
+                            <button class="btn" type="submit">
+                        Enviar
+                            </button>
+                     </p>
+                    </form>
                 </div>
+            <section class="contacto__info" id="info" >
 
-                <div>
-                    <input type="email" name="email" id="email" required placeholder="Email">
-                </div>
+                <h2>Mas Información</h2>
+                <ul class="contacto__lista">
+                    <li> Tel: 4441 - 6879 / 3971 - 2354 </li>
+                    <li> Whatsapp: (011) 6796 - 9324 </li>
+                    <li> envaflu@gmail.com </li>
+                    <li> Matheu 842, Lomas del Mirador </li>
+                </ul>
 
-                <div>
-                    <input type="tel" name="phone" id="phone" placeholder="Teléfono">
-                </div>
+                <p>Ya sea para adquirir cualquiera de nuestros productos o para cotizar un desarrollo exclusivo para tu empresa o emprendimiento.</p>
 
+                <p>No dudes en comunicarte con nosotros!</p>
 
-                <div>
-                   <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Escribi tu consulta"></textarea>
-                </div>
+            </section>
+        </div>
 
+        </div>
 
-                <input type="submit" value="Enviar">
-                <input type="reset" value="vaciar formulario">
-            </div>    
-
-        </form>
-    </main>
-
-
-
+    </main>    
 
 
 
 
     <footer class="footer">
-        <a href="../index.html"><img src="../img/logos/logo_envaflu-2.png" height="120px" alt="LOGO EMPRESA" class="footer__logo"></a>
+        
         <nav class="footer__nav">
             <ul class="footer__list">
                 <li class="footer__item"><a href="./productos.html" class="footer__anchor">Productos</a></li>
@@ -77,11 +108,14 @@
                 <li class="footer__item"><a href="./contacto.html" class="footer__anchor">Contacto</a></li>
             </ul>
         </nav>
+
+        <a href="../index.html"><img src="../img/logos/logo_envaflu-2.png" height="120px" alt="LOGO EMPRESA" class="footer__logo"></a>
+
         <section class="footer__contacto">
             <ul class="footer__contacto--lista">
-                <li class="footer__contacto--item">envaflu@gmail.com</li>
-                <li class="footer__contacto--item">Tel: (54 11) 4441 - 6879 / 3971 - 2354</li>
+                <li class="footer__contacto--item">(54 11) 4441 - 6879 / 3971 - 2354</li>
                 <li class="footer__contacto--item">Whatsapp: (011) 6796 - 9324</li>
+                <li class="footer__contacto--item">envaflu@gmail.com</li>
                 <li class="footer__contacto--item">Matheu 842, Lomas del Mirador</li>
             </ul>
         </section>
@@ -98,3 +132,11 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
