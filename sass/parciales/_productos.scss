@@ -1,0 +1,195 @@
+.productos{
+	height: auto;
+	background-image: url(../img/background_contacto2.jpg);
+	background-position: center;
+	background-repeat: repeat-y;
+	background-size: cover;
+
+
+}
+
+
+.productos__wrapper{
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+	display: flex;
+	justify-content: space-evenly;
+	
+
+}
+
+.productos__titulo{
+	text-align: center;
+	font-size: 1.8rem;
+	font-family: 'Bebas Neue', cursive;	
+	font-style: italic;
+	color: white; 
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+
+.productos__container {
+	width: 320px;
+	height: 450px;
+	font-family: 'Quicksand', sans-serif;
+	border-radius: 20px;
+	-webkit-box-shadow: 7.5px 13px 19px 4.5px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 7.5px 13px 19px 4.5px rgba(0, 0, 0, 0.75);
+	box-shadow: 7.5px 13px 19px 4.5px rgba(0, 0, 0, 0.75);
+}
+
+.productos__img{
+	height: 100px;
+	filter: drop-shadow(3px 13px 10px #000000);
+}
+
+
+.productos__container .productos__card {
+	position: relative;
+	width: 320px;
+	height: 450px;
+	background: rgba(255,255,255,0.2);
+	-webkit-backdrop-filter: blur(2px);
+	backdrop-filter: blur(2px);
+	border: 1px solid rgba(255,255,255,0.1);
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.productos__container .productos__card:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.408);
+	clip-path: circle(150px at 80% 20%);
+	transition: 0.5s ease-in-out;
+}
+
+.productos__container .productos__card:hover:before {
+	clip-path: circle(300px at 80% 20%);
+}
+
+
+
+.productos__container .productos__card .productos__img {
+	position: relative;
+	top: 45%;
+	transform: translateY(-50%);
+	width: 100%;
+	height: 200px;
+	align-items: center;
+	transition: 0.5s;
+}
+
+.productos__container .productos__card:hover .productos__img {
+	top: 0%;
+	transform: translateY(25%) rotate(5deg) scale(110%);
+}
+
+
+.productos__container .productos__card .productos__img img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(-5deg);
+	width: 300px;
+}
+
+
+.productos__container .productos__card .productos__info {
+	position: absolute;
+	bottom: -40px;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	transition: 1s;
+	z-index: 10;
+}
+
+.productos__container .productos__card:hover .productos__info {
+	height: 190px;
+}
+
+.productos__container .productos__card .productos__info h2 {
+	position: relative;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+.productos__container .productos__card .productos__info .size,
+.productos__container .productos__card .productos__info .color,
+.productos__container .productos__card .productos__info .productos__precio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 8px 20px;
+	transition: 0.5%;
+	opacity: 0;
+	visibility: hidden;
+}
+
+
+
+.productos__container .productos__card:hover .productos__info .productos__precio {
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 0.1s;
+}
+
+
+.productos__container .productos__card:hover .productos__info .productos__precio h3{
+	color: #fff;
+	font-size: 1.3rem;
+}
+
+
+
+.productos__container .productos__card .productos__info .productos__precio span {
+	width: 60px;
+	height: 25px;
+	text-align: center;
+	line-height: 26px;
+	font-size: 1.5rem;
+	display: inline-block;
+	margin: 0 5px;
+	transition: 00.2s;
+	color: rgb(255, 255, 255);
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+
+.productos__container .productos__card .productos__info a {
+	display: inline-block;
+	padding: 10px 20px;
+	background: #fff;
+	border-radius: 4px;
+	margin-top: 10px;
+	text-decoration: none;
+	font-weight: 600;
+	color: #111;
+	opacity: 0;
+	transform: translateY(50px);
+	transition: 0.5s;
+}
+
+.productos__container .productos__card .productos__info a {
+	opacity: 1;
+	transform: translateY(0px);
+	visibility: hidden;
+}
+
+.productos__container .productos__card:hover .productos__info a {
+	opacity: 1;
+	visibility: visible;
+	
+}
+
+.productos__container .productos__card .productos__info a:hover {
+	background: rgb(182, 182, 182);
+}

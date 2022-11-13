@@ -1,0 +1,40 @@
+.nosotros{
+	background-image: url(../img/nosotros_background.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	height: 90vh;
+	position: relative;
+
+	&__container{
+		position: absolute;
+		left: 5rem;
+		top: 4rem;
+		width: 40%;
+	 }
+	
+	
+	 &__h1{
+		position: absolute;
+		font-family: 'Bebas Neue', cursive;
+		font-style: italic;
+		text-shadow: black 0.1em 0.1em 0.2em;
+		font-size: 3rem;
+		color: white;
+		top: 1rem;
+		left: 9rem;
+	 }
+	
+	
+	 &__p{
+		position: absolute;
+		font-family: 'poppins', sans-serif;
+		text-shadow: black 0.1em 0.1em 0.2em;
+		font-style: italic;
+		font-size: 1.2rem;
+		color: white;
+		top: 6rem;
+		right: 1rem;
+	 }
+ }
+

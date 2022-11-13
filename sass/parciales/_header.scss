@@ -1,0 +1,44 @@
+.header {
+	background-color: $color_gris;
+	-webkit-box-shadow: -6.5px 5.5px 7.5px 3px rgba(0, 0, 0, 0.65);
+	-moz-box-shadow: -6.5px 5.5px 7.5px 3px rgba(0, 0, 0, 0.65);
+	box-shadow: -6.5px 5.5px 7.5px 3px rgba(0, 0, 0, 0.65);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem;
+	position: relative;
+
+
+	&__logo{
+		max-width: 280px; 
+		
+	}
+   
+   
+	&__list{
+	   display: flex;
+	   text-decoration: none;
+	   list-style: none;
+   
+	}
+   
+   
+	&__item{
+		padding: 1.2rem;
+		text-decoration: none;
+		font-family: 'Bebas Neue', cursive;
+		font-size: 1.5rem;
+		font-style: italic;
+	}
+   
+   
+	&__anchor{
+		color: white;
+	}
+
+
+}
+
+
+ 

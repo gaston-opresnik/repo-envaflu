@@ -1,0 +1,18 @@
+.btn{
+	text-decoration: none;
+	background: rgb(255, 11, 81);
+ 	padding: 1rem;
+	border-radius: 0.5rem;
+	color: white;
+	font-family: 'bebas neue', sans-serif;
+	font-style: italic;
+	font-size: 1.5rem;
+	display: inline-block;
+	margin-top: 2rem;
+	text-align: center;
+
+	&:hover{
+		background-color: rgb(186, 0, 56);
+	}
+}
+
