@@ -1,3 +1,5 @@
+@import "./variables";
+
 * {
 	margin: 0;
 	padding: 0;
@@ -21,7 +23,13 @@ a:visited {
 
 }
 
-a:hover {
+.header__anchor:hover {
 	text-decoration: none;
-	color: rgb(255, 11, 81);
+	color: $color_envaflu;
 }
+
+.footer__anchor:hover {
+	text-decoration: none;
+	color: $color_envaflu;
+}
+

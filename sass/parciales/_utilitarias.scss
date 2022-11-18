@@ -1,18 +1,20 @@
 .btn{
 	text-decoration: none;
-	background: rgb(255, 11, 81);
- 	padding: 1rem;
-	border-radius: 0.5rem;
+	background: $gradiente;
+	padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+	border: solid 0.1px rgba(255, 255, 255, 0);
+	border-radius: 0.8rem;
 	color: white;
 	font-family: 'bebas neue', sans-serif;
 	font-style: italic;
 	font-size: 1.5rem;
 	display: inline-block;
-	margin-top: 2rem;
+	margin-top: 0.5rem;
 	text-align: center;
 
 	&:hover{
-		background-color: rgb(186, 0, 56);
+		color: $color_envaflu;
+		background: white;
 	}
-}
 
+}

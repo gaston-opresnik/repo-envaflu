@@ -1,13 +1,34 @@
+
 @media screen and (max-width: 767px) {
 	.header {
 		flex-direction: column;
 		height: auto;
 
 	}
+
+
 	.header__list {
 		flex-direction: column;
 		align-items: center;
 
+	}
+
+	.header__item{
+		padding: 1rem 0rem;
+
+	}
+
+	.hero{
+		font-size: 1rem;
+		background-size: cover;
+		background-position: left;
+
+	}
+
+
+	.info{
+		height: auto;
+		background-size: auto;
 	}
 
 	.contacto__wrapper{
@@ -30,9 +51,55 @@
 	}
 
 
-	.productos__wrapper{
-		flex-direction: column;		
+	.productos{
+		padding: 1rem;
 	}
+
+	.productos__wrapper{
+		flex-direction: column;
+		justify-self: center;
+		justify-content: space-evenly;
+		align-items: center;
+		
+	}
+
+	.productos__container{
+		margin: 1rem;
+	}
+
+	.nosotros{
+		display: flex;
+		flex-direction: column;
+		height: auto;
+
+		&__container{
+			padding-top: 2rem;
+			padding-bottom: 1rem;
+		}
+
+		&__img{
+			display: none;
+		}
+	}
+
+	.corporativos{
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+
+		&__img{
+			width: 250%;
+		}
+		
+		
+		&__h2{
+			font-family: 'poppins', sans-serif;
+			font-size: 1rem;
+		}
+
+	}
+
+	
 
 
 
@@ -75,6 +142,11 @@
 		flex-direction: row;
 	}
 
+	.info{
+		height: auto;
+		background-size: auto;
+	}
+
 	.contacto__caja{
 		padding: 1rem;
 		margin: 0 0.5rem;
@@ -82,8 +154,10 @@
 	}
 
 	.productos__wrapper{
-		flex-direction: column;
-		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+
 	}
 
 
@@ -112,7 +186,9 @@
 
 	.productos__wrapper{
 		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: space-evenly;
+
 
 	}
 

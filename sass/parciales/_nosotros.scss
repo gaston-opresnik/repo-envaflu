@@ -1,40 +1,53 @@
 .nosotros{
-	background-image: url(../img/nosotros_background.jpg);
-	background-repeat: no-repeat;
-	background-position: bottom;
+	
+	background-position: center;
 	background-size: cover;
+	background-repeat: no-repeat;
 	height: 90vh;
-	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 
-	&__container{
-		position: absolute;
-		left: 5rem;
-		top: 4rem;
-		width: 40%;
+
+	&__container{	
+		background: rgb(255,0,157);
+		background: linear-gradient(332deg, rgba(255,0,157,1) 0%, rgba(255,0,67,1) 100%);
+		justify-self: center;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		
+	
 	 }
+
 	
-	
-	 &__h1{
-		position: absolute;
+	 &__container h1{
 		font-family: 'Bebas Neue', cursive;
 		font-style: italic;
 		text-shadow: black 0.1em 0.1em 0.2em;
 		font-size: 3rem;
 		color: white;
-		top: 1rem;
-		left: 9rem;
 	 }
 	
 	
-	 &__p{
-		position: absolute;
+	 &__container p{
+		width: 80%;
 		font-family: 'poppins', sans-serif;
 		text-shadow: black 0.1em 0.1em 0.2em;
 		font-style: italic;
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 		color: white;
-		top: 6rem;
-		right: 1rem;
+	 } 
+	
+	
+
+
+	&__img{
+		background-image: url(/img/nosotros_img.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
 	 }
  }
 

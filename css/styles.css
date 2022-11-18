@@ -12,24 +12,30 @@ a:link {
 a:visited {
   text-decoration: none; }
 
-a:hover {
+.header__anchor:hover {
+  text-decoration: none;
+  color: #ff0b51; }
+
+.footer__anchor:hover {
   text-decoration: none;
   color: #ff0b51; }
 
 .btn {
   text-decoration: none;
-  background: #ff0b51;
-  padding: 1rem;
-  border-radius: 0.5rem;
+  background: linear-gradient(153deg, #ff0088 0%, #ff683c 100%);
+  padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+  border: solid 0.1px rgba(255, 255, 255, 0);
+  border-radius: 0.8rem;
   color: white;
   font-family: 'bebas neue', sans-serif;
   font-style: italic;
   font-size: 1.5rem;
   display: inline-block;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   text-align: center; }
   .btn:hover {
-    background-color: #ba0038; }
+    color: #ff0b51;
+    background: white; }
 
 .header {
   background-color: #181818;
@@ -51,7 +57,7 @@ a:hover {
     padding: 1.2rem;
     text-decoration: none;
     font-family: 'Bebas Neue', cursive;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-style: italic; }
   .header__anchor {
     color: white; }
@@ -154,158 +160,124 @@ a:hover {
 
 .productos {
   height: auto;
-  background-image: url(../img/background_contacto2.jpg);
+  background-image: url(/img/background_3.png);
   background-position: center;
   background-repeat: repeat-y;
   background-size: cover; }
-
-.productos__wrapper {
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-  display: flex;
-  justify-content: space-evenly; }
-
-.productos__titulo {
-  text-align: center;
-  font-size: 1.8rem;
-  font-family: 'Bebas Neue', cursive;
-  font-style: italic;
-  color: white;
-  text-shadow: black 0.1em 0.1em 0.2em; }
-
-.productos__container {
-  width: 320px;
-  height: 450px;
-  font-family: 'Quicksand', sans-serif;
-  border-radius: 20px;
-  -webkit-box-shadow: 7.5px 13px 19px 4.5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 7.5px 13px 19px 4.5px rgba(0, 0, 0, 0.75);
-  box-shadow: 7.5px 13px 19px 4.5px rgba(0, 0, 0, 0.75); }
-
-.productos__img {
-  height: 100px;
-  filter: drop-shadow(3px 13px 10px #000000); }
-
-.productos__container .productos__card {
-  position: relative;
-  width: 320px;
-  height: 450px;
-  background: rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  overflow: hidden; }
-
-.productos__container .productos__card:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.408);
-  clip-path: circle(150px at 80% 20%);
-  transition: 0.5s ease-in-out; }
-
-.productos__container .productos__card:hover:before {
-  clip-path: circle(300px at 80% 20%); }
-
-.productos__container .productos__card .productos__img {
-  position: relative;
-  top: 45%;
-  transform: translateY(-50%);
-  width: 100%;
-  height: 200px;
-  align-items: center;
-  transition: 0.5s; }
-
-.productos__container .productos__card:hover .productos__img {
-  top: 0%;
-  transform: translateY(25%) rotate(5deg) scale(110%); }
-
-.productos__container .productos__card .productos__img img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-5deg);
-  width: 300px; }
-
-.productos__container .productos__card .productos__info {
-  position: absolute;
-  bottom: -40px;
-  width: 100%;
-  height: 100px;
-  text-align: center;
-  transition: 1s;
-  z-index: 10; }
-
-.productos__container .productos__card:hover .productos__info {
-  height: 190px; }
-
-.productos__container .productos__card .productos__info h2 {
-  position: relative;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: #fff; }
-
-.productos__container .productos__card .productos__info .size,
-.productos__container .productos__card .productos__info .color,
-.productos__container .productos__card .productos__info .productos__precio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 20px;
-  transition: 0.5%;
-  opacity: 0;
-  visibility: hidden; }
-
-.productos__container .productos__card:hover .productos__info .productos__precio {
-  opacity: 1;
-  visibility: visible;
-  transition-delay: 0.1s; }
-
-.productos__container .productos__card:hover .productos__info .productos__precio h3 {
-  color: #fff;
-  font-size: 1.3rem; }
-
-.productos__container .productos__card .productos__info .productos__precio span {
-  width: 60px;
-  height: 25px;
-  text-align: center;
-  line-height: 26px;
-  font-size: 1.5rem;
-  display: inline-block;
-  margin: 0 5px;
-  transition: 00.2s;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer; }
-
-.productos__container .productos__card .productos__info a {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #fff;
-  border-radius: 4px;
-  margin-top: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  color: #111;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: 0.5s; }
-
-.productos__container .productos__card .productos__info a {
-  opacity: 1;
-  transform: translateY(0px);
-  visibility: hidden; }
-
-.productos__container .productos__card:hover .productos__info a {
-  opacity: 1;
-  visibility: visible; }
-
-.productos__container .productos__card .productos__info a:hover {
-  background: #b6b6b6; }
+  .productos__wrapper {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex; }
+  .productos__titulo {
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Bebas Neue', cursive;
+    font-style: italic;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em; }
+  .productos__container {
+    margin: 1rem;
+    width: 320px;
+    height: 420px;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 20px;
+    box-shadow: 7.5px 13px 19px 4.5px rgba(0, 0, 0, 0.75); }
+  .productos__img {
+    height: 100px;
+    filter: drop-shadow(3px 13px 10px #000000); }
+  .productos__container .productos__card {
+    position: relative;
+    width: 320px;
+    height: 420px;
+    background: rgba(25, 25, 25, 0.052);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.025);
+    border-radius: 20px;
+    overflow: hidden; }
+  .productos__container .productos__card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(153deg, #ff0088 0%, #ff683c 100%);
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out; }
+  .productos__container .productos__card:hover:before {
+    clip-path: circle(230px at 80% 20%); }
+  .productos__container .productos__card .productos__img {
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    transition: 0.5s; }
+  .productos__container .productos__card:hover .productos__img {
+    top: 0%;
+    transform: translateY(25%) rotate(5deg) scale(110%); }
+  .productos__container .productos__card .productos__img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-5deg);
+    width: 300px; }
+  .productos__container .productos__card .productos__info {
+    position: absolute;
+    bottom: -40px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10; }
+  .productos__container .productos__card:hover .productos__info {
+    height: 190px;
+    transform: translateY(-10%) scale(110%); }
+  .productos__container .productos__card .productos__info h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff; }
+  .productos__container .productos__card .productos__info .size,
+  .productos__container .productos__card .productos__info .color,
+  .productos__container .productos__card .productos__info .productos__precio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5%;
+    opacity: 0;
+    visibility: hidden; }
+  .productos__container .productos__card:hover .productos__info .productos__precio {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.2s; }
+  .productos__container .productos__card:hover .productos__info .productos__precio h3 {
+    color: #fff;
+    font-size: 1.5rem; }
+  .productos__container .productos__card .productos__info .productos__precio span {
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 1.8rem;
+    display: inline-block;
+    margin: 0 5px;
+    transition: 00.2s;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer; }
+  .productos__container .productos__card .productos__info a {
+    opacity: 1;
+    transform: translateY(0px);
+    visibility: hidden; }
+  .productos__container .productos__card:hover .productos__info a {
+    opacity: 1;
+    visibility: visible; }
 
 .corporativos {
   background-image: url(../img/background_2.jpg);
@@ -313,58 +285,60 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 6rem;
-  height: 85vh; }
+  height: 85vh;
+  display: flex;
+  justify-content: space-evenly; }
   .corporativos__card {
     width: 30%;
-    display: inline-block;
-    margin: 1rem;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center; }
   .corporativos__img {
     width: 80%;
-    border-radius: 1.5rem;
-    margin-left: 2rem; }
+    border-radius: 1.5rem; }
   .corporativos__h2 {
-    position: absolute;
     font-family: 'poppins', sans-serif;
-    font-size: 1.3rem;
-    color: #3a3a3a;
-    margin-top: 1rem;
-    left: 9rem; }
+    font-size: 1.5rem;
+    color: black; }
 
 .nosotros {
-  background-image: url(../img/nosotros_background.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   height: 90vh;
-  position: relative; }
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
   .nosotros__container {
-    position: absolute;
-    left: 5rem;
-    top: 4rem;
-    width: 40%; }
-  .nosotros__h1 {
-    position: absolute;
+    background: #ff009d;
+    background: linear-gradient(332deg, #ff009d 0%, #ff0043 100%);
+    justify-self: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; }
+  .nosotros__container h1 {
     font-family: 'Bebas Neue', cursive;
     font-style: italic;
     text-shadow: black 0.1em 0.1em 0.2em;
     font-size: 3rem;
-    color: white;
-    top: 1rem;
-    left: 9rem; }
-  .nosotros__p {
-    position: absolute;
+    color: white; }
+  .nosotros__container p {
+    width: 80%;
     font-family: 'poppins', sans-serif;
     text-shadow: black 0.1em 0.1em 0.2em;
     font-style: italic;
-    font-size: 1.2rem;
-    color: white;
-    top: 6rem;
-    right: 1rem; }
+    font-size: 1.3rem;
+    color: white; }
+  .nosotros__img {
+    background-image: url(/img/nosotros_img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
 
 .contacto {
-  background-image: url(../img/background_contacto2.jpg);
+  background-image: url(/img/background_nosotros.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -390,9 +364,10 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr; }
   .contacto__formulario form p {
-    margin: 0;
-    padding: 1rem; }
-  .contacto__formulario button,
+    padding: 1.2rem; }
+  .contacto__formulario form div {
+    justify-self: center;
+    padding-top: 2rem; }
   .contacto__formulario form input,
   .contacto__formulario form textarea {
     width: 100%;
@@ -403,17 +378,13 @@ a:hover {
     outline: none;
     color: white;
     margin-bottom: 0.5rem; }
-  .contacto__formulario form button {
-    background-color: #ff0b51;
-    border: 0;
-    padding: 0.5rem; }
   .contacto__block {
     grid-column: 1 / 3; }
   .contacto__info {
-    background: rgba(0, 0, 0, 0.4);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.432);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(0, 0, 0, 0);
     padding: 2rem; }
   .contacto__info h2,
   .contacto__info ul,
@@ -449,6 +420,15 @@ a:hover {
   .header__list {
     flex-direction: column;
     align-items: center; }
+  .header__item {
+    padding: 1rem 0rem; }
+  .hero {
+    font-size: 1rem;
+    background-size: cover;
+    background-position: left; }
+  .info {
+    height: auto;
+    background-size: auto; }
   .contacto__wrapper {
     grid-template-columns: 100%;
     grid-template-areas: "formulario" "info"; }
@@ -459,8 +439,33 @@ a:hover {
   .contacto__form {
     display: flex;
     flex-direction: column; }
+  .productos {
+    padding: 1rem; }
   .productos__wrapper {
-    flex-direction: column; }
+    flex-direction: column;
+    justify-self: center;
+    justify-content: space-evenly;
+    align-items: center; }
+  .productos__container {
+    margin: 1rem; }
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    height: auto; }
+    .nosotros__container {
+      padding-top: 2rem;
+      padding-bottom: 1rem; }
+    .nosotros__img {
+      display: none; }
+  .corporativos {
+    flex-direction: column;
+    align-items: center;
+    height: auto; }
+    .corporativos__img {
+      width: 250%; }
+    .corporativos__h2 {
+      font-family: 'poppins', sans-serif;
+      font-size: 1rem; }
   .footer {
     display: flex;
     flex-direction: column;
@@ -481,12 +486,16 @@ a:hover {
     height: auto; }
   .header__list {
     flex-direction: row; }
+  .info {
+    height: auto;
+    background-size: auto; }
   .contacto__caja {
     padding: 1rem;
     margin: 0 0.5rem; }
   .productos__wrapper {
-    flex-direction: column;
-    justify-content: center; } }
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; } }
 
 /*---------- MEDIAQUERIE DESDE 1024 PX ----------*/
 @media screen and (min-width: 1023px) {
@@ -501,4 +510,5 @@ a:hover {
     padding: 1.5rem; }
   .productos__wrapper {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly; } }
